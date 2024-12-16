@@ -9,7 +9,10 @@ import { useState } from "react";
 import { IoCloseCircleOutline } from "react-icons/io5";
 const Header = () => {
   const [menuShow, setMenuShow] = useState(false);
+  const closeMenu=()=>{
+      setMenuShow(false)
 
+  }
   return (
     <header className="header">
       <div className="my-container">
@@ -18,39 +21,39 @@ const Header = () => {
             <div onClick={() => setMenuShow(true)} className="menu-icon">
               <img src={menuBtnIcon} alt="" />
             </div>
-            <div className={menuShow ? "menu active" : "menu"}>
+            <div className={menuShow ? "menu active" : "menu dp-none"}>
               <div className="menu-con">
                 <div onClick={() => setMenuShow(false)} className="close-btn">
                   <IoCloseCircleOutline />
                 </div>
                 <ul className="links">
                   <li>
-                    <NavLink to="/" className="link">
+                    <NavLink onClick={closeMenu} to="/" className="link">
                       Home
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/" className="link">
+                    <NavLink onClick={closeMenu} to="/about" className="link">
                       ABOUT
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/" className="link">
+                    <NavLink onClick={closeMenu} to="/" className="link">
                       PRODUCT
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/" className="link">
+                    <NavLink onClick={closeMenu} to="/service" className="link">
                       SERVICE
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/" className="link">
+                    <NavLink onClick={closeMenu} to="/" className="link">
                       CAMPAIGN
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/" className="link">
+                    <NavLink onClick={closeMenu} to="/" className="link">
                       CONTACT
                     </NavLink>
                   </li>
@@ -94,36 +97,36 @@ const Header = () => {
           </div>
           <ul className="links dp-between rp-none">
             <li>
-              <NavLink to="/" className="link">
+              <NavLink  to="/" className="link">
                 Home
               </NavLink>
             </li>
             <div className="red-cricle"></div>
-            <li>
-              <NavLink to="/" className="link">
+            <li >
+              <NavLink to="/about" className="link">
                 ABOUT
               </NavLink>
             </li>
             <div className="red-cricle"></div>
-            <li>
+            <li >
               <NavLink to="/" className="link">
                 PRODUCT
               </NavLink>
             </li>
             <div className="red-cricle"></div>
-            <li>
-              <NavLink to="/" className="link">
+            <li >
+              <NavLink to="/service" className="link">
                 SERVICE
               </NavLink>
             </li>
             <div className="red-cricle"></div>
-            <li>
+            <li >
               <NavLink to="/" className="link">
                 CAMPAIGN
               </NavLink>
             </li>
             <div className="red-cricle"></div>
-            <li>
+            <li >
               <NavLink to="/" className="link">
                 CONTACT
               </NavLink>

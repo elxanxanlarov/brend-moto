@@ -421,11 +421,13 @@ const Home = () => {
                           onClick={() => openFaqFunc(item.id)}
                           className="btn btn-danger active"
                         >
-                          {openFaqId == item.id ? (
+                          {
+                          openFaqId == item.id ? (
                             <FaMinus className="icon" />
                           ) : (
                             <FaPlus className="icon" />
-                          )}
+                          )
+                          }
                         </button>
                       </div>
                       <p className="box-text">
