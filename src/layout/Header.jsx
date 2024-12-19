@@ -38,7 +38,7 @@ const Header = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink onClick={closeMenu} to="/" className="link">
+                    <NavLink onClick={closeMenu} to="/product-list" className="link">
                       PRODUCT
                     </NavLink>
                   </li>
@@ -109,7 +109,7 @@ const Header = () => {
             </li>
             <div className="red-cricle"></div>
             <li >
-              <NavLink to="/" className="link">
+              <NavLink to="/product-list" className="link">
                 PRODUCT
               </NavLink>
             </li>
