@@ -129,7 +129,7 @@ const ProductList = () => {
                     <p>
                       SHOWING <span>1-12 21</span> RESULTS
                     </p>
-                    <img className="dp-none" src={cateoryMenuBtn} alt="" />
+                    <img className="dp-none category-menu-btn" src={cateoryMenuBtn} alt="" />
                   </div>
                   <div className="search-sort dp-align ">
                     <div className="sort">
