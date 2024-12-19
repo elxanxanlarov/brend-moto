@@ -1498,6 +1498,7 @@ p {
     .page-head h2 {
         font-size: 1.6rem;
     }
+    
     .products .products-right .right-top .search-sort .sort .head p{
         padding-right: 0 !important;
         font-size: .7rem;
@@ -1517,7 +1518,10 @@ p {
         height: 2rem;
     }
 
-
+    .products .products-right .right-bottom .product-card{
+        padding: 0;
+        padding-bottom: .5rem;
+    }
 
 }
 @media (max-width:460px) {
@@ -1574,7 +1578,7 @@ p {
         padding-bottom: .3rem;
     }
     .products .products-right .right-top .search-sort .sort .head p{
-        font-size: .6rem;
+        font-size: .55rem;
         width: 6rem;
         padding-left: .2rem !important;
     }
@@ -1586,6 +1590,7 @@ p {
     }
     .products .products-right .right-top .search-sort .search input::placeholder {
         font-size: .55rem;
+        
     }
     .products .products-right .right-top .search-sort .sort .head {
         height: 1.5rem;
@@ -1596,6 +1601,9 @@ p {
     .products .products-right .right-top .search-sort .search .search-icon, 
     .products .products-right .right-top .search-sort .sort .head .arrow {
         width: 1.5rem;
+    }
+    .products .products-right .right-top{
+        height: 7rem;
     }
 }
 
